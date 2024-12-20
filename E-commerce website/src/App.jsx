@@ -4,6 +4,7 @@ import {Layout} from "./components/Layout/Layout";
 import {Home} from './screen/home/Home';
 import { Footer } from './components/Layout/Footer';
 
+
 export const App = () => {
   return (
     <>
@@ -14,6 +15,7 @@ export const App = () => {
         element = {
           <Layout>
             <Home />
+            <data />
             <Footer />
           </Layout>
         }
