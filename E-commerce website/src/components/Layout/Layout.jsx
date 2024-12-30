@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 export const Layout = ({children}) => {
   return (
-    <div className="bg-primary w-full overflow-hidden" style={{backgroundColor : "green"}}>
+    <div className="bg-primary w-full overflow-hidden" >
         {/* <Header /> */}
         <main style={{minHeight : "80vh"}}>{children}</main>
         <h2>Footer main</h2>
@@ -12,5 +12,5 @@ export const Layout = ({children}) => {
 };
 
 Layout.propTypes = {
-    children: PropTypes.isRequired,
-};
+    children: PropTypes.node.isRequired,
+};  
