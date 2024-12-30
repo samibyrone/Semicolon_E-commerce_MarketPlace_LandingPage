@@ -3,9 +3,10 @@ import { BrowserRouter, Form, Route, Routes } from "react-router-dom";
 import {Layout} from "./components/Layout/Layout";
 import {Home} from './screen/home/Home';
 import { Footer } from './components/Layout/Footer';
+import { Navbar } from './components/Layout/Navbar';
 
 
-export const App = () => {
+const App = () => {
   return (
     <>
     <BrowserRouter>
@@ -15,7 +16,7 @@ export const App = () => {
         element = {
           <Layout>
             <Home />
-            <data />
+            <Navbar />
             <Footer />
           </Layout>
         }
@@ -25,3 +26,5 @@ export const App = () => {
     </>
   );
 };
+
+export default App;
