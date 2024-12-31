@@ -2,9 +2,9 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import {Layout} from './components/Layout/Layout';
 import {Home} from './screen/home/Home';
-import { Footer } from './components/Layout/Footer';
+import { Footer } from './components/Footer';
 // import { Navbar } from './components/Layout/Navbar';
-import { Header } from './components/Layout/Header';
+import { Header } from './components/Header';
 
 
 const App = () => {

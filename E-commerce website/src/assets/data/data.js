@@ -1,4 +1,4 @@
-export const menulists = [
+export const menuLists = [
   {
     id: 1,
     path: "/home",
@@ -28,7 +28,7 @@ export const menulists = [
     id: 6,
     path: "/contact",
     link: "Contact"
-  },
+  }
 ];
 
 export const herolist = [

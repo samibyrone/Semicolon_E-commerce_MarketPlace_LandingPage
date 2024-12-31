@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbarList{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.image{
+    width: 300px;
+    margin: 3% 1% 1% 15%;
+    justify-content: center;
+}
+
+.menuList{
+    width: 900px;
+    height: 70px;
+    display: flex;
+    margin: 2% 5% 5% 30%; 
+    padding: 20px;
+    background-color: aqua;
+    justify-items: center;
+    gap: 50px;
+    list-style: none;
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
