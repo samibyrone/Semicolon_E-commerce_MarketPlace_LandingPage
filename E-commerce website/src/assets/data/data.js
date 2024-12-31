@@ -1,8 +1,8 @@
 export const menulists = [
   {
     id: 1,
-    path: "/",
-    link: "home"
+    path: "/home",
+    link: "Home"
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const menulists = [
   {
     id: 4,
     path: "/about",
-    link: "about"
+    link: "About"
   },
   {
     id: 5,
@@ -28,7 +28,7 @@ export const menulists = [
     id: 6,
     path: "/contact",
     link: "Contact"
-  }
+  },
 ];
 
 export const herolist = [
