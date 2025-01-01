@@ -73,8 +73,8 @@ export const Header = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-8 icons"> 
-            <div className="uppercase hidden lg:block text-inherit relative z-20">
+          <div className={style.navbarMenu}> 
+            <div className={ style.login}>
               
               <CustomLink 
                 className={`${
@@ -99,15 +99,15 @@ export const Header = () => {
             </div>
 
             <div 
-              className={`icon flex items-center justify-center gap-6 ${
+              className={`icon ${
                 isScrolled || isHomePage ? "text-white" : "text-primary"
               }`}>
             
-              <IoSearchOutline size={23} />
+              <IoSearchOutline size={25} />
 
-              <div className="relative z-20">
+              <div className={style.relative}>
 
-                <IoHeartOutline size={23} />
+                <IoHeartOutline size={25} />
                 
                 <div className="absolute -top-2 -right-1.5">
                   <Badges className="bg-primary-green">10</Badges>
@@ -115,7 +115,7 @@ export const Header = () => {
 
                 <div className="relative z-20">
                 
-                  <IoCartOutline size={23} />
+                  <IoCartOutline size={25} />
                 
                   <div className="absolute -top-2 -right-1.5">
                 
