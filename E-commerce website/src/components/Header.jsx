@@ -5,6 +5,7 @@ import style from "../styles/header.module.css";
 import { Badges, CustomLink, CustomNavLink } from './CustomComponent';
 import {IoSearchOutline, IoHeartOutline, IoCartOutline} from 'react-icons/io5';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { useLocation } from 'react-router';
 
 
 export const Header = () => {
@@ -12,6 +13,7 @@ export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const menuRef = useRef(null);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -37,14 +39,14 @@ export const Header = () => {
     };
   }, []);
 
-  const isHomePage = window.location.pathname === "/";
+  const isHomePage = location.pathname === "/";
 
   return (
     <>
       <header 
         className={
           isHomePage
-            ? `header px-12 py-3 bg-white-100 relative z-20 ${
+            ? ` ${style.header} header px-12 py-3 bg-white-100 relative z-20 ${
               isScrolled ? "scrolled" : ""
               }`
              : `header px-12 py-3 relative z-20 ${isScrolled ? "scrolled" : ""}`
@@ -52,7 +54,7 @@ export const Header = () => {
       >
         {isHomePage && (
           <div 
-            className={`${
+            className={` ${style.isHomePage} ${
               isScrolled ? "lg:hidden" : "lg:black"
             } lg:h-[88px] lg:absolute lg:top-0 lg:right-0 lg:w-1/3 lg: z-10`}> 
           </div>
@@ -67,7 +69,9 @@ export const Header = () => {
             <div className={style.menuList} style={{color: "red"}}>
               {menuLists.map((list) => (
                 <li key={list.id} className='uppercase list-none'>
-                  <CustomNavLink href={list.path}>{list.link}</CustomNavLink>
+                  <CustomNavLink href={list.path} >
+                    {list.link}
+                    </CustomNavLink>
                 </li>
               ))} 
             </div>
@@ -78,29 +82,29 @@ export const Header = () => {
               
               <CustomLink 
                 className={`${
-                  isScrolled || isHomePage ? "text-white" : "text-primary"
+                  isScrolled || !isHomePage ? "text-white" : "text-primary"
                 }`}>
                 Login
               </CustomLink>
               
               <span 
                  className={`${
-                  isScrolled || isHomePage ? "text-white" : "text-primary"
+                  isScrolled || !isHomePage ? "text-white" : "text-primary"
                 }`}>
                 /
               </span>
             
               <CustomLink
                 className={`${
-                  isScrolled || isHomePage ? "text-white" : "text-primary"
+                  isScrolled || !isHomePage ? "text-white" : "text-primary"
                 }`}>
                 Register
               </CustomLink>
             </div>
 
             <div 
-              className={`icon ${
-                isScrolled || isHomePage ? "text-white" : "text-primary"
+              className={`${style.icon} flex items-center justify-center gap-6 ${
+                isScrolled || !isHomePage ? "text-white" : "text-primary"
               }`}>
             
               <IoSearchOutline size={25} />
@@ -110,7 +114,9 @@ export const Header = () => {
                 <IoHeartOutline size={25} />
                 
                 <div className="absolute -top-2 -right-1.5">
-                  <Badges className="bg-primary-green">10</Badges>
+
+                  <Badges className={style.badges}>10</Badges>
+                
                 </div>
 
                 <div className="relative z-20">
@@ -119,18 +125,18 @@ export const Header = () => {
                 
                   <div className="absolute -top-2 -right-1.5">
                 
-                    <Badges className="bg-primary-green">0</Badges>
+                    <Badges className={style.badges}>0</Badges>
                 
                   </div>
                 </div>
               </div>
               
               <button onClick={toggleMenu}
-                className="lg:hidden w-10 h-10 flex justify-center items-center bg-black text-white focus:outline-none">
+                className={style.button}>
                   {isOpen ? (
-                    <AiOutlineClose size={24}/>
+                    <AiOutlineClose size={25}/>
                   ) : (
-                  <AiOutlineMenu size={24}/>
+                  <AiOutlineMenu size={25}/>
                 )}
               </button>
             </div>
@@ -140,10 +146,15 @@ export const Header = () => {
           </div>
         
           <div ref={menuRef}
-            className={`lg:flex lg:items-center lg:w-auto w-full p-5 absolute right-0 top-full menu-container ${isOpen ? "open" : "closed"}`}>
+            className={`lg:flex lg:items-center lg:w-auto w-full p-5 absolute right-0 top-full menu-container ${
+              isOpen ? "open" : "closed"
+              }`}
+          >
             {menuLists.map((list) => (
               <li key={list.id} className='uppercase list-none'>
-                <CustomNavLink href={list.path}>{list.link}</CustomNavLink>
+                <CustomNavLink href={list.path} className={style.list}>
+                  {list.link}
+                  </CustomNavLink>
               </li>
             ))}
           </div>

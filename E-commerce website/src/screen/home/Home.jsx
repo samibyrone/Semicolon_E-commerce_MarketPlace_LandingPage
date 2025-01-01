@@ -1,3 +1,9 @@
+import { Hero } from "../../router";
+
 export const Home = () => {
-    return <div>Home</div>;
+    return (
+        <>
+            <Hero />
+        </>
+    );
 };

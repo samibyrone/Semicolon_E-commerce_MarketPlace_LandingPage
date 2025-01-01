@@ -37,6 +37,17 @@ const Badges = ({color, children}) => {
     );
 };
 
+export {
+  Title,
+  BodyOne,
+  BodyTwo,
+  Capion,
+  Span,
+  Badges,
+  CustomLink,
+  // CustomNavLink,
+}
+
 export {CustomNavLink, CustomLink, Badges};
 
 CustomNavLink.propTypes = {
