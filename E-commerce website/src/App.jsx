@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import {Layout, Home} from "./router";
+import { Layout } from "./router";
+import { Home } from "./router";
 import { Footer } from './components/Footer';
 // import { Navbar } from './components/Layout/Navbar';
 import { Header } from './components/Header';
@@ -8,8 +9,8 @@ import { Header } from './components/Header';
 
 const App = () => {
   return (
-    <>
-    <BrowserRouter>
+
+    <BrowserRouter future={{v7_relativeSplatPath: true}}>
       <Routes>
         <Route 
         path='/'
@@ -24,7 +25,7 @@ const App = () => {
         />
       </Routes>
     </BrowserRouter>
-    </>
+    
   );
 };
 

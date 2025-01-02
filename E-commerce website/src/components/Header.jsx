@@ -39,6 +39,7 @@ export const Header = () => {
     };
   }, []);
 
+
   const isHomePage = location.pathname === "/";
 
   return (
@@ -154,7 +155,7 @@ export const Header = () => {
               <li key={list.id} className='uppercase list-none'>
                 <CustomNavLink href={list.path} className={style.list}>
                   {list.link}
-                  </CustomNavLink>
+                </CustomNavLink>
               </li>
             ))}
           </div>

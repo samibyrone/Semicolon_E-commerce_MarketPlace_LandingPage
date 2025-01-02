@@ -37,32 +37,51 @@ const Badges = ({color, children}) => {
     );
 };
 
-export {
-  Title,
-  BodyOne,
-  BodyTwo,
-  Capion,
-  Span,
-  Badges,
-  CustomLink,
-  // CustomNavLink,
-}
+const Title = ({ level, children, className }) => {
+  const Tag = `h${level}`;
+  return <Tag className={className}> {children} </Tag>;
+};
+     
 
-export {CustomNavLink, CustomLink, Badges};
+const BodyOne = ({ children, className }) =>  <p className={className}> {children}  </p>;
+      
+const BodyTwo = ({ children, className }) =>  <p className={className}> {children}  </p>;
+      
+const Caption = ({ children, className }) =>  <span className={className}>  {children}  </span>;
+      
+const Span = ({ children, className }) => <span className={className}>  {children}  </span>;
+
+
+Title.propTypes = {
+  level: PropTypes.oneOf([1, 2, 3, 4, 5, 6]).isRequired,
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string.isRequired,
+};
 
 CustomNavLink.propTypes = {
     href: PropTypes.string.isRequired,
     className: PropTypes.string,
     children: PropTypes.node.isRequired,
-};
-
-
-CustomLink.propTypes = {
+  };
+  
+  CustomLink.propTypes = {
     className: PropTypes.string.isRequired,
     children: PropTypes.node.isRequired,
 };
 
 Badges.propTypes = {
-    color: PropTypes.string,
-    children: PropTypes.node.isRequired,
+  color: PropTypes.string,
+  children: PropTypes.node.isRequired,
+};
+
+
+export {
+  Title, 
+  BodyOne, 
+  BodyTwo, 
+  Caption, 
+  Span, 
+  Badges, 
+  CustomLink, 
+  CustomNavLink, 
 };
