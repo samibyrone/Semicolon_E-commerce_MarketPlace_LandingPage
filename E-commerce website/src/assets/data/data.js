@@ -71,8 +71,7 @@ export const productlists = [
   {
     id: 1,
     title: "Wooden single drawer",
-    description:
-      "Enhance your home decor with our Wooden Single Drawer. Crafted with precision and designed for functionality, this drawer provides ample storage space while adding a touch of elegance to any room. The rich wooden finish complements a variety of interior styles, making it a versatile addition to your home. The discount of 10% makes it an affordable choice, and with a rating of 2.5, it's a reliable and stylish furniture piece. Featured as a top pick, this drawer is a must-have for those who appreciate quality craftsmanship.",
+    description: "Enhance your home decor with our Wooden Single Drawer. Crafted with precision and designed for functionality, this drawer provides ample storage space while adding a touch of elegance to any room. The rich wooden finish complements a variety of interior styles, making it a versatile addition to your home. The discount of 10% makes it an affordable choice, and with a rating of 2.5, it's a reliable and stylish furniture piece. Featured as a top pick, this drawer is a must-have for those who appreciate quality craftsmanship.",
     images: [
       { image: "../images/product/product1.png" },
       { image: "../images/product/product1.3.png" },
@@ -106,13 +105,16 @@ export const productlists = [
       { color: "white", value: 120.5 },
       { color: "brown", value: 85.75 }
     ],
-    color: [{ value: "blue" }, { value: "white" }, { value: "brown" }]
+    color: [
+      { value: "blue" }, 
+      { value: "white" }, 
+      { value: "brown" }
+    ]
   },
   {
     id: 3,
     title: "Wooden Glass",
-    description:
-      "Sip in style with our Wooden Glass collection. Crafted with precision, these wooden glasses add a natural touch to your beverage experience. The set includes glasses in various colors to suit your mood. With a 12% discount, these glasses offer both aesthetics and affordability. Rated at 4.5, these glasses are perfect for daily use or special occasions, making them a versatile addition to your glassware collection.",
+    description: "Sip in style with our Wooden Glass collection. Crafted with precision, these wooden glasses add a natural touch to your beverage experience. The set includes glasses in various colors to suit your mood. With a 12% discount, these glasses offer both aesthetics and affordability. Rated at 4.5, these glasses are perfect for daily use or special occasions, making them a versatile addition to your glassware collection.",
     images: [
       { image: "../images/product/product3.png" },
       { image: "../images/product/product1.2.png" },
@@ -126,13 +128,16 @@ export const productlists = [
       { color: "brown", value: 35.5 },
       { color: "green", value: 27.75 }
     ],
-    color: [{ value: "clear" }, { value: "brown" }, { value: "green" }]
+    color: [
+      { value: "clear" }, 
+      { value: "brown" }, 
+      { value: "green" }
+    ]
   },
   {
     id: 4,
     title: "Wooden Cup",
-    description:
-      "Experience the warmth of wooden craftsmanship with our Wooden Cup collection. Each cup is meticulously crafted to bring a rustic charm to your kitchen. The 18% discount makes it an excellent value, and with a high rating of 4.8, these cups are a favorite among those who appreciate quality. Not featured, but certainly not to be overlooked, these wooden cups are perfect for enjoying your favorite beverages.",
+    description: "Experience the warmth of wooden craftsmanship with our Wooden Cup collection. Each cup is meticulously crafted to bring a rustic charm to your kitchen. The 18% discount makes it an excellent value, and with a high rating of 4.8, these cups are a favorite among those who appreciate quality. Not featured, but certainly not to be overlooked, these wooden cups are perfect for enjoying your favorite beverages.",
     images: [
       { image: "../images/product/product4.png" },
       { image: "../images/product/product1.1.png" },
@@ -155,8 +160,7 @@ export const productlists = [
   {
     id: 5,
     title: "Wooden Coffee Mug",
-    description:
-      "Start your day with the charm of our Wooden Coffee Mugs. Crafted with care, these mugs bring a touch of nature to your morning routine. The 15% discount ensures affordability without compromising on style. With a rating of 4.0, these mugs are not just functional but also visually appealing. While not featured, they are a delightful addition to any coffee lover's collection.",
+    description: "Start your day with the charm of our Wooden Coffee Mugs. Crafted with care, these mugs bring a touch of nature to your morning routine. The 15% discount ensures affordability without compromising on style. With a rating of 4.0, these mugs are not just functional but also visually appealing. While not featured, they are a delightful addition to any coffee lover's collection.",
     images: [
       { image: "../images/product/product5.png" },
       { image: "../images/product/product1.3.png" },
@@ -170,13 +174,16 @@ export const productlists = [
       { color: "light", value: 18.5 },
       { color: "white", value: 12.75 }
     ],
-    color: [{ value: "dark" }, { value: "light" }, { value: "white" }]
+    color: [
+      { value: "dark" }, 
+      { value: "light" }, 
+      { value: "white" }
+    ]
   },
   {
     id: 6,
     title: "Wooden Brush",
-    description:
-      "Upgrade your grooming routine with our Wooden Brush collection. Made with high-quality materials, these brushes offer a natural and comfortable grooming experience. The 20% discount makes them a great value, and with a rating of 4.2, they are a reliable choice for your daily routine. Although not featured, these wooden brushes stand out for their durability and eco-friendly design.",
+    description: "Upgrade your grooming routine with our Wooden Brush collection. Made with high-quality materials, these brushes offer a natural and comfortable grooming experience. The 20% discount makes them a great value, and with a rating of 4.2, they are a reliable choice for your daily routine. Although not featured, these wooden brushes stand out for their durability and eco-friendly design.",
     images: [
       { image: "../images/product/product6.png" },
       { image: "../images/product/product1.2.png" },
@@ -190,13 +197,16 @@ export const productlists = [
       { color: "brown", value: 12.5 },
       { color: "black", value: 8.75 }
     ],
-    color: [{ value: "natural" }, { value: "brown" }, { value: "black" }]
+    color: [
+      { value: "natural"}, 
+      { value: "brown" }, 
+      { value: "black" }
+    ]
   },
   {
     id: 7,
     title: "Wooden Bottles",
-    description:
-      "Elevate your hydration experience with our Wooden Bottles. Crafted with precision and designed for durability, these bottles are an eco-friendly choice for your daily water intake. The 15% discount makes them an affordable and sustainable option. With a rating of 3.5, these bottles are a practical and stylish addition to your daily routine.",
+    description: "Elevate your hydration experience with our Wooden Bottles. Crafted with precision and designed for durability, these bottles are an eco-friendly choice for your daily water intake. The 15% discount makes them an affordable and sustainable option. With a rating of 3.5, these bottles are a practical and stylish addition to your daily routine.",
     images: [
       { image: "../images/product/product7.png" },
       { image: "../images/product/product1.3.png" },
@@ -210,17 +220,18 @@ export const productlists = [
       { color: "green", value: 29.5 },
       { color: "brown", value: 22.75 }
     ],
-    color: [{ value: "blue" }, { value: "green" }, { value: "brown" }]
+    color: [
+      { value: "blue" }, 
+      { value: "green" }, 
+      { value: "brown" }
+    ]
   },
   {
     id: 8,
     title: "Luxury Couch",
-    description:
-      "Indulge in luxury with our Elegant and Comfortable Wooden Couch. Crafted with meticulous attention to detail, this couch adds a touch of sophistication to your living room. The 25% discount makes it a premium choice without compromising on quality. With an impressive rating of 4.8, this couch is a featured product for those who seek both style and comfort.",
+    description: "Indulge in luxury with our Elegant and Comfortable Wooden Couch. Crafted with meticulous attention to detail, this couch adds a touch of sophistication to your living room. The 25% discount makes it a premium choice without compromising on quality. With an impressive rating of 4.8, this couch is a featured product for those who seek both style and comfort.",
     images: [
-      {
-        image: "../images/product/product8.png"
-      },
+      { image: "../images/product/product8.png" },
       { image: "../images/product/product1.2.png" },
       { image: "../images/product/product1.3.png" }
     ],
@@ -232,48 +243,26 @@ export const productlists = [
       { color: "gray", value: 849.5 },
       { color: "beige", value: 780.75 }
     ],
-    color: [{ value: "black" }, { value: "gray" }, { value: "beige" }]
+    color: [
+      { value: "black" }, 
+      { value: "gray" }, 
+      { value: "beige" }
+    ]
   }
 ];
 
-/* import { FaShippingFast } from "react-icons/fa";
-  import { MdOutlineMarkUnreadChatAlt } from "react-icons/md";
-  import { FaCircleDollarToSlot } from "react-icons/fa6";
-  
-  const additionalInfo = [
-    {
-      id: 1,
-      title: "FREE SHIPPING",
-      description: "Enjoy Free Shipping On All Orders - No Minimum Purchase Required.",
-      icon: <FaShippingFast size={50} />,
-    },
-    {
-      id: 2,
-      title: "24/7 SUPPORT",
-      description: "Our Team Is Available 24/7 To Help With Any Questions Or Concerns.",
-      icon: <MdOutlineMarkUnreadChatAlt size={50} />,
-    },
-    {
-      id: 3,
-      title: "MONEY BACK",
-      description: "We Offer A 100% Money-Back Guarantee For Your Satisfaction.",
-      icon: <FaCircleDollarToSlot size={50} />,
-    },
-  ];
-   */
+
 export const promotionalInfo = [
   {
     id: 1,
     title: "Free Shipping On All Orders Over $59",
-    description:
-      "Shop & shipment across the whole North America. Lorem Ipsum is simply dummy text of It’s easy to get lost in the world of lovely valley vapour around and the meridian sun strikes the upper surface.",
+    description: "Shop & shipment across the whole North America. Lorem Ipsum is simply dummy text of It’s easy to get lost in the world of lovely valley vapour around and the meridian sun strikes the upper surface.",
     image: "../images/promotional/prom1.png"
   },
   {
     id: 2,
     title: "From $29.05",
-    description:
-      "Organic Skincare for Glowing Complexion. Lorem Ipsum is simply dummy text of It’s easy to get lost in the world of lovely valley vapour around and the meridian sun strikes the upper surface.",
+    description: "Organic Skincare for Glowing Complexion. Lorem Ipsum is simply dummy text of It’s easy to get lost in the world of lovely valley vapour around and the meridian sun strikes the upper surface.",
     image: "../images/promotional/prom2.png"
   }
 ];
