@@ -10,14 +10,15 @@ import { Header } from './components/Header';
 const App = () => {
   return (
 
-    <BrowserRouter future={{v7_relativeSplatPath: true}}>
+    <BrowserRouter>
       <Routes>
         <Route 
         path='/'
         element = {
           <Layout>
             <Header />
-            <Home />
+            {/* <Home />
+             */}
             {/* <Navbar /> */}
             <Footer />
           </Layout>
